@@ -3,8 +3,9 @@ import {BrowserRouter,Switch, Route} from 'react-router-dom';
 import TopNav from './components/TopNav';
 import Photofeed from './components/Photofeed';
 import './App.css';
+import BottomNav from './components/BottomNav';
 
-class App extends Component () {
+class App extends Component {
   state={
     posts:[
         {
@@ -33,6 +34,7 @@ class App extends Component () {
       <div className="App">
         <TopNav/>
         {eachPost}
+        <BottomNav/>
       </div>
     )
 
