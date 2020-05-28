@@ -9,21 +9,21 @@ import john from '../img/feedImg/john.PNG'
 
 const BottomNav = (props) => {
     return (
-        <nav>
+        <nav className='bottomNav'>
             <a href="">
-                <object type="image/svg+xml" data={home} class="icon">Home</object>
+                <object type="image/svg+xml" data={home} className="icon">Home</object>
             </a>
             <a href="">
-                <object type="image/svg+xml" data={search} class="icon">Search</object>
+                <object type="image/svg+xml" data={search} className="icon">Search</object>
             </a>
             <a href="">
-                <object type="image/svg+xml" data={plus} class="icon">Add</object>
+                <object type="image/svg+xml" data={plus} className="icon">Add</object>
             </a>
             <a href="">
-                <object type="image/svg+xml" data={heart} class="icon">Heart</object>
+                <object type="image/svg+xml" data={heart} className="icon">Heart</object>
             </a>
             <a href="">
-                <img className="profileImg" src={john} alt=""/>
+                <div className='icon' id='imgDiv'><img className="avatarbNav" src={john} alt=""/></div>
             </a>
             
 

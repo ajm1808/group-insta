@@ -18,8 +18,14 @@
 
 }
 #topSearch {
-    background-color: lightgrey;
+    background-color: #FAFAFA;
     text-align: center;
+    border: solid 1px #dbdbdb;
+    color: #dbdbdb;
+    border-radius: 5px;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px 20px 3px 20px;
 }
 .navIconsBox {
 
