@@ -19,6 +19,7 @@
     width: 700px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 3px;
+    
 }
 
 .topBar{
@@ -119,6 +120,7 @@
     width:24px;
     height:24px;
     padding:8px;
+    
 }
 
 .share{
@@ -127,6 +129,10 @@
     padding:8px;
 }
 
+#likes{
+   margin:0;
+   padding-left: 40px;
+}
 .postingInfo{
     display: flex;
     padding-left: 16px;
@@ -144,4 +150,20 @@
 .profileNameB{
    padding-right: 5px;
     font-weight: 600;
+}
+
+
+.commenthere{
+    display: flex;
+    width: 700px;
+    height:50px;
+    left: 10px;
+    border-top: 1px solid rgba(var(--ce3,239,239,239),1);;
+    justify-content: flex-start;
+}
+
+#com1{
+    padding-left: 15px;
+    font-weight: 200;
+    padding-top: 5px;
 }

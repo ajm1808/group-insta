@@ -1,8 +1,9 @@
 
 nav {
     display:flex;
-    text-align: center;    
     align-items: baseline;
+
+
 }
 a {
 width:25%;
