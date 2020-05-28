@@ -1,0 +1,49 @@
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: rgba(var(--i1d,38,38,38)1);
+    min-width:500px;
+    align-content: center;
+}
+.feedBox{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 614px;
+}
+
+.topBar{
+    padding:16px;
+    max-width:614px;
+    flex-direction: row;
+}
+
+.profileImg{
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    float: left;
+}
+
+.dots{
+    float:right;
+}
+
+.photoBox{
+    width:inherit;
+
+}
+
+.photo{
+    width:inherit;
+}
+
+.profileName{
+    float:left;
+}
+
