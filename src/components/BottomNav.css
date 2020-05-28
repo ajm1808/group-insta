@@ -2,7 +2,9 @@
 nav {
     display:flex;
     align-items: baseline;
-
+    position: sticky;
+    bottom:0;
+    background-color: white;
 
 }
 a {
