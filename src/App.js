@@ -6,8 +6,9 @@ import './App.css';
 import BottomNav from './components/BottomNav';
 import Cheryl from './img/feedImg/cheryl.PNG';
 import CherylHome from './img/feedImg/home1.PNG';
-import likeIcon from './img/heart.svg';
-import commentIcon from './img/comment-alt.svg';
+import Charlie from './img/feedImg/charlie.PNG';
+import CharlieHome from './img/feedImg/home2.PNG';
+
 
 class App extends Component {
   state={
@@ -19,9 +20,17 @@ class App extends Component {
           photo: CherylHome,
           description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           likes:0,
-          comment:commentIcon,
-          likeIcon:likeIcon
-        }  
+        
+        },  
+        {
+          id:1,
+          profileImg:Charlie,
+          profileName:"charliechaplin",
+          photo: CharlieHome,
+          description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+          likes:0,
+        
+        } 
 
     ]
 
@@ -35,8 +44,7 @@ class App extends Component {
         photo={posts.photo} 
         description={posts.description} 
         likes={posts.likes}
-        comment={posts.comment}
-        likeIcon={posts.likeIcon}/>
+        />
     })
     return(
       <div className="App">

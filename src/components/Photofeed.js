@@ -1,5 +1,8 @@
 import React from 'react';
 import './Photofeed.css';
+import likeIcon from '../img/heart.svg';
+import commentIcon from '../img/comment-alt.svg';
+import share from '../img/paper-plane.svg';
 
 
 const Photofeed=(props)=>{
@@ -18,24 +21,30 @@ const Photofeed=(props)=>{
                 <div className="photoBox">
                     <img className="photo" src={props.photo} alt=""/>
                 </div>
-                <div className="photoBar">
-                    <span className="icons">
-                        <button className="likeOthersBtn"><img src={props.likeIcon} alt="like"/></button>
-                    </span>
-                    <span className="icons">    
-                        <img className="comments" src={props.comment} alt="comments"/>
-                    </span>
-                    <span className="icons">
-                        <img className="share" src="" alt="share"/>
-                    </span>    
-                </div>
-                <div className="likeCount">
-                    <div className="counter"></div>
-                </div>
-                <div className="postingInfo">
-                    <div className="profileNameB">{props.profileName}</div>
-                    <p>{props.description}</p>
-                </div>
+                <div className="bottom">
+                    <div className="photoBar">
+                        <span className="icons">
+                            <div className="likeOthersBtn"><img src={likeIcon} alt="like"/></div>
+                        </span>
+                        <span className="icons">    
+                            <img className="icons comments" src={commentIcon} alt="comments"/>
+                        </span>
+                        <span className="icons">
+                        <   img className="icons share" src={share} alt="share"/>
+                        </span>    
+                    </div>
+                    <div className="likeCount">
+                        <div className="counter">
+                            <p>likes</p>
+                        </div>
+                    </div>
+                    <div className="postingInfo">
+                        <p>
+                            <a className="profileNameB">{props.profileName}</a>
+                            {props.description}
+                        </p>
+                    </div>
+                </div>    
             </div>
         </div>    
 

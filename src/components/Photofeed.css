@@ -10,13 +10,15 @@
     min-width:700px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
-    background-color: rgb(250 250 250);
+    background-color: rgb(250, 250, 250);
 }
 .feedBox{
     display:flex;
     flex-direction: column;
     margin-bottom: 60px;
     width: 700px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
 }
 
 .topBar{
@@ -73,12 +75,27 @@
 
 .photo{
     width:inherit;
+    border-radius: 0px;
+}
+
+.bottom{
+    background-color: white;
 }
 
 .profileName{
     float:left;
     margin-left: 16px;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+.photoBar{
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 4px;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
 .icons{
@@ -86,7 +103,45 @@
     height:40px;
 }
 
+.likeCount{
+    margin-top: 1px;
+}
+
+.likeOthersBtn{
+    width: 24px;
+    height:24px;
+    padding:8px;
+}
+
+
+
 .comments{
     width:24px;
     height:24px;
+    padding:8px;
+}
+
+.share{
+    width: 24px;
+    height: 24px;
+    padding:8px;
+}
+
+.postingInfo{
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: row;
+    overflow-wrap: break-word;
+    text-align: left;
+   
+}
+
+.profileNameB{
+   padding-right: 5px;
+    font-weight: 600;
 }
