@@ -35,6 +35,13 @@ class App extends Component {
     ]
 
   }
+
+  addToLikes = () => {
+    this.setState({
+      likes: this.state.likes +1
+    })
+  }
+
   render(){
     const eachPost=this.state.posts.map((posts)=>{
       return <Photofeed 
