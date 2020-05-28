@@ -5,7 +5,6 @@
     flex-shrink: 0;
     margin: 0;
     padding: 0;
-    position: relative;
     color: rgba(var(--i1d,38,38,38)1);
     min-width:700px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,8 +39,8 @@
     box-sizing: border-box;
    vertical-align: baseline;
    color: rgba(var(--i1d,38,38,38)1);
-   position: relative;
-   overflow: hidden;
+   
+   
 }
 
 .nameDots{
