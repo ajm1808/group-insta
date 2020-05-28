@@ -7,20 +7,47 @@
     padding: 0;
     position: relative;
     color: rgba(var(--i1d,38,38,38)1);
-    min-width:500px;
-    align-content: center;
+    min-width:700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    background-color: rgb(250 250 250);
 }
 .feedBox{
     display:flex;
     flex-direction: column;
     margin-bottom: 60px;
-    width: 614px;
+    width: 700px;
 }
 
 .topBar{
+    display:flex;
+    height:60px;
     padding:16px;
-    max-width:614px;
+    max-width:700px;
     flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-bottom-color: rgb(239 239 239);
+    border-bottom-width:0.5px;
+    border-bottom: 1px solid rgba(var(--ce3,239,239,239),1);
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    box-sizing: border-box;
+   vertical-align: baseline;
+   color: rgba(var(--i1d,38,38,38)1);
+   position: relative;
+   overflow: hidden;
+}
+
+.nameDots{
+    display:flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: row;
+    position: relative;
 }
 
 .profileImg{
@@ -28,10 +55,15 @@
     height: 32px;
     border-radius: 50%;
     float: left;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .dots{
     float:right;
+    position: relative;
+    
 }
 
 .photoBox{
@@ -45,5 +77,16 @@
 
 .profileName{
     float:left;
+    margin-left: 16px;
+    font-weight: 400;
 }
 
+.icons{
+    width:40px;
+    height:40px;
+}
+
+.comments{
+    width:24px;
+    height:24px;
+}
