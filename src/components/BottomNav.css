@@ -1,0 +1,13 @@
+
+nav {
+    display:flex;
+    text-align: center;    
+    align-items: baseline;
+}
+a {
+width:25%;
+}
+.icon {    
+    max-height: 30px;
+    margin: 10px 0px;
+}
