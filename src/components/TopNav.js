@@ -2,8 +2,10 @@ import React from 'react';
 import './TopNav.css';
 import instalogo from '../img/insta-logo.svg';
 import home from '../img/home.svg';
-import heart from '../img/heart.svg';
 import paperplane from '../img/paper-plane.svg';
+import compass from '../img/compass.svg';
+import heart from '../img/heart.svg';
+
 
 
 const TopNav =()=>{
@@ -22,8 +24,8 @@ const TopNav =()=>{
                     <object type="image/svg+xml" data={paperplane} className='topIcons'></object>
                 </a>
                 <a href="">
-                {/* <img src={paperplane} /> */}
-                    <object type="image/svg+xml" data={paperplane} className='topIcons'></object>
+                {/* <img src={compass} /> */}
+                    <object type="image/svg+xml" data={compass} className='topIcons'></object>
                 </a>
                 <a href="">
                     {/* <img src={heart} /> */}
