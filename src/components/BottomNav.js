@@ -4,7 +4,7 @@ import  home from '../img/home.svg'
 import  search from '../img/search.svg'
 import  plus from '../img/plus-square.svg'
 import  heart from '../img/heart.svg'
-
+import john from '../img/feedImg/john.PNG'
 
 
 const BottomNav = (props) => {
@@ -23,7 +23,7 @@ const BottomNav = (props) => {
                 <object type="image/svg+xml" data={heart} class="icon">Heart</object>
             </a>
             <a href="">
-                <img className="profileImg" src={props.profileImg} alt=""/>
+                <img className="profileImg" src={john} alt=""/>
             </a>
             
 

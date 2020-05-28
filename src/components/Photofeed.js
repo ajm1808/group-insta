@@ -1,30 +1,58 @@
 import React from 'react';
 import './Photofeed.css';
+import likeIcon from '../img/heart.svg';
+import commentIcon from '../img/comment-alt.svg';
+import share from '../img/paper-plane.svg';
+
 
 const Photofeed=(props)=>{
     return(
-        <div className="feedBox">
-            <div className="topBar">
-                <img className="profileImg" src={props.profileImg} alt=""/>
-                <div className="profileName">{props.profileName}</div>
-                <div className="dots">...</div>
+        <div className="feed">
+            <div className="feedBox">
+                <div className="topBar">
+                    
+                        <img className="profileImg" src={props.profileImg} alt=""/>
+                        <div className="nameDots">
+                            <div className="profileName">{props.profileName}</div>
+                            <div className="dots">...</div>
+                        </div>
+                        
+                </div>
+                <div className="photoBox">
+                    <img className="photo" src={props.photo} alt=""/>
+                </div>
+                <div className="bottom">
+                    <div className="photoBar">
+                        <span className="icons">
+                            <div className="likeOthersBtn"><img src={likeIcon} alt="like"/></div>
+                        </span>
+                        <span className="icons">    
+                            <img className="icons comments" src={commentIcon} alt="comments"/>
+                        </span>
+                        <span className="icons">
+                        <   img className="icons share" src={share} alt="share"/>
+                        </span>    
+                    </div>
+                    <div className="likeCount">
+                        <div className="counter">
+                            <p id="likes">likes</p>
+                        </div>
+                    </div>
+                    <div className="postingInfo">
+                        <p>
+                            <a className="profileNameB">{props.profileName}</a>
+                            {props.description}
+                        </p>
+                    </div>
+                    
+                    <span className="commenthere">
+                        <a id="com1">
+                            Comments...
+                        </a>
+                    </span>
+                </div>    
             </div>
-            <div className="photoBox">
-                <img className="photo" src={props.photo} alt=""/>
-            </div>
-            <div className="photoBar">
-                <button className="likeOthersBtn"></button>
-                <img className="comments" src="" alt="comments"/>
-                <img className="share" src="" alt="share"/>
-            </div>
-            <div className="likeCount">
-                <div className="counter"></div>
-            </div>
-            <div className="postingInfo">
-                <div className="profileName">{props.profileName}</div>
-                <p>{props.description}</p>
-            </div>
-        </div>
+        </div>    
 
     )
 
