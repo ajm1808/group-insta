@@ -36,6 +36,19 @@ width:25%;
     align-items: center;
 }
 
+.btnIcons{
+
+    padding:0;
+    border:none;
+    background:0;
+    width:25%;
+}
+
+.svgIcon:hover {
+    
+    fill:black;
+}
+
 @media screen and (min-width:0px) and (max-width:700px){
     .bottomNav {display:flex;}
 }
