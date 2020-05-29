@@ -34,14 +34,14 @@ class App extends Component {
 
   }
 
-  addToLikes = () => {
-    this.setState({
-      likes:this.state.likes +1
-    })
+  addToLikes = (index) => {
+    let currentLikes=this.state.posts
+    currentLikes[index].likes++
+    this.setState({posts: currentLikes})
   }
 
   render(){
-    const eachPost=this.state.posts.map((posts)=>{
+    const eachPost=this.state.posts.map((posts,index)=>{
       return <Photofeed 
         key={posts.id} 
         profileImg={posts.profileImg} 
@@ -51,6 +51,7 @@ class App extends Component {
         likes={posts.likes}
         addingLikes={this.addToLikes}
         likeCount={posts.likes}
+        index={index}
         />
     })
     return(

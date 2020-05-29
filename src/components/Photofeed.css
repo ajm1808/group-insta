@@ -91,7 +91,7 @@
 
 .photoBar{
     display: flex;
-    padding-left: 16px;
+    padding-left: 10px;
     padding-right: 16px;
     margin-top: 4px;
     flex-direction: row;
@@ -146,7 +146,7 @@ button:focus{
 
 #likes{
    margin:0;
-   padding-left: 40px;
+   padding-left: 4px;
 }
 .postingInfo{
     display: flex;
