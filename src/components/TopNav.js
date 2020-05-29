@@ -19,7 +19,7 @@ const TopNav =()=>{
                     <object type="image/svg+xml" data={home} className='topIcons' alt="home"></object>
                 </a>
                 <a>
-                    <object type="image/svg+xml" data={paperplane} className='topIcons' alt="paperplane"></object>
+                    <object type="image/svg+xml" data={paperplane} className='topIcons paper' alt="paperplane"></object>
                 </a>
                 <a>
                     <object type="image/svg+xml" data={compass} className='topIcons' alt="compass"></object>

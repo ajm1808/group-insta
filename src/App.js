@@ -50,7 +50,7 @@ class App extends Component {
     // allPosts.push(newPost)
     // this.setState({ posts: allPosts })
 
-    this.setState(prevState => ({ posts: [...prevState.posts, newPost], toggleAddPhoto: false }))
+    this.setState(prevState => ({ posts: [newPost,...prevState.posts], toggleAddPhoto: false }))
   }
 
 

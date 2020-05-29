@@ -116,14 +116,19 @@
     background:0;
 }
 
+/* button:
+
 button:focus{
     outline: none;
-}
+} */
+
 
 .buttonImg{
     width:24px;
     height:24px;
 }
+
+
 
 #likebar{
     margin-top:4px;
