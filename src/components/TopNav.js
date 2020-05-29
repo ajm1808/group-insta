@@ -5,7 +5,7 @@ import home from '../img/home.svg';
 import paperplane from '../img/paper-plane.svg';
 import compass from '../img/compass.svg';
 import heart from '../img/heart.svg';
-
+import john from '../img/feedImg/john.PNG'
 
 
 const TopNav =()=>{
@@ -17,23 +17,23 @@ const TopNav =()=>{
             <div id="navIcons">
                 <a href="">
                 {/* <img src={home} /> */}
-                    <object type="image/svg+xml" data={home} className='topIcons'></object>
+                    <object type="image/svg+xml" data={home} className='topIcons' alt="home"></object>
                 </a>
                 <a href="">
                 {/* <img src={paperplane} /> */}
-                    <object type="image/svg+xml" data={paperplane} className='topIcons'></object>
+                    <object type="image/svg+xml" data={paperplane} className='topIcons' alt="paperplane"></object>
                 </a>
                 <a href="">
                 {/* <img src={compass} /> */}
-                    <object type="image/svg+xml" data={compass} className='topIcons'></object>
+                    <object type="image/svg+xml" data={compass} className='topIcons' alt="compass"></object>
                 </a>
                 <a href="">
                     {/* <img src={heart} /> */}
-                    <object type="image/svg+xml" data={heart} className='topIcons'></object>
+                    <object type="image/svg+xml" data={heart} className='topIcons' alt ="heart"></object>
                 </a>
                 <a href="">
                     {/* <img src={heart} /> */}
-                    <object type="image/svg+xml" data={heart} className='topIcons'></object>
+                    <img className="avatarbNav" src={john} alt=""/>
                 </a>
 
 
