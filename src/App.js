@@ -13,7 +13,6 @@ import CharlieHome from './img/feedImg/home2.PNG';
 class App extends Component {
   state={
     posts:[
-      
         {
           id:0,
           profileImg:Cheryl,
@@ -21,7 +20,6 @@ class App extends Component {
           photo: CherylHome,
           description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           likes:0,
-        
         },  
         {
           id:1,
@@ -30,21 +28,26 @@ class App extends Component {
           photo: CharlieHome,
           description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           likes:0,
-        
         } 
 
     ]
 
   }
 
-  addToLikes = () => {
-    this.setState({
-      likes: this.state.likes +1
-    })
+  addToLikes = (index) => {
+    let currentLikes=this.state.posts
+    if(currentLikes[index].likes==0){
+    currentLikes[index].likes++;
+    this.setState({posts: currentLikes})
+    }
+    else{
+      currentLikes[index].likes--;
+      this.setState({posts: currentLikes})
+    }
   }
 
   render(){
-    const eachPost=this.state.posts.map((posts)=>{
+    const eachPost=this.state.posts.map((posts,index)=>{
       return <Photofeed 
         key={posts.id} 
         profileImg={posts.profileImg} 
@@ -53,7 +56,8 @@ class App extends Component {
         description={posts.description} 
         likes={posts.likes}
         addingLikes={this.addToLikes}
-        likeCount={this.state.likes}
+        likeCount={posts.likes}
+        index={index}
         />
     })
     return(
