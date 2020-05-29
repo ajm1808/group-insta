@@ -37,9 +37,9 @@ const Photofeed=(props)=>{
                     </div>
                     <div className="likeCount">
                         <div className="counter">
-                            <p>
-                            <a id="likes">likes</a>
-                                {props.likeCount}
+                            <p id="likebar">
+                                <a className="likeCounter">{props.likeCount}</a>
+                                <a id="likes">likes</a>
                             </p>
                         </div>
                     </div>

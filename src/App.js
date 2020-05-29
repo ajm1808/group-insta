@@ -20,7 +20,6 @@ class App extends Component {
           photo: CherylHome,
           description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           likes:0,
-        
         },  
         {
           id:1,
@@ -29,7 +28,6 @@ class App extends Component {
           photo: CharlieHome,
           description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           likes:0,
-        
         } 
 
     ]
@@ -37,9 +35,8 @@ class App extends Component {
   }
 
   addToLikes = () => {
-    let count=this.state.likes +1
     this.setState({
-      likes: count
+      likes:this.state.likes +1
     })
   }
 
@@ -53,7 +50,7 @@ class App extends Component {
         description={posts.description} 
         likes={posts.likes}
         addingLikes={this.addToLikes}
-        likeCount={this.state.likes}
+        likeCount={posts.likes}
         />
     })
     return(
