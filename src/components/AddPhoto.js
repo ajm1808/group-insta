@@ -23,11 +23,10 @@ class AddPhoto extends Component {
         return (
             <div className='photoWrapper'>
                 <form className='photoForm' onSubmit={this.handleForm}>
-                    <div><span>New Post</span><button>Share</button></div>
+                    <h2 id='newPost'>New Post</h2>
                     <div id='john'><img id='john' src={john}></img></div>
                     <input type="text" id='captionBox' value={this.state.caption} onChange={this.handleInput}/>
-                    <span>Tag People</span>
-                    <span>Add Location</span>
+                    <button id='btnShare' onClick={this.handleForm}>Share</button>
                 </form>
             </div>
         
