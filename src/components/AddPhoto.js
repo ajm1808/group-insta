@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './AddPhoto.css';
+import john from '../img/feedImg/john.PNG';
 
 
 class AddPhoto extends Component {
@@ -22,8 +23,8 @@ class AddPhoto extends Component {
         return (
             <div className='photoWrapper'>
                 <form className='photoForm' onSubmit={this.handleForm}>
-                    <input id='inputPhoto' type='file'  />
-                    <span>New Post</span><button>Share</button>
+                    <div><span>New Post</span><button>Share</button></div>
+                    <div id='john'><img id='john' src={john}></img></div>
                     <input type="text" id='captionBox' value={this.state.caption} onChange={this.handleInput}/>
                     <span>Tag People</span>
                     <span>Add Location</span>
