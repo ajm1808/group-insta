@@ -38,8 +38,9 @@ class App extends Component {
   }
 
   addToLikes = () => {
+    let count=this.state.likes +1
     this.setState({
-      likes: this.state.likes +1
+      likes: count
     })
   }
 
