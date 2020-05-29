@@ -13,6 +13,7 @@ import CharlieHome from './img/feedImg/home2.PNG';
 class App extends Component {
   state={
     posts:[
+      
         {
           id:0,
           profileImg:Cheryl,
@@ -51,6 +52,8 @@ class App extends Component {
         photo={posts.photo} 
         description={posts.description} 
         likes={posts.likes}
+        addingLikes={this.addToLikes}
+        likeCount={this.state.likes}
         />
     })
     return(

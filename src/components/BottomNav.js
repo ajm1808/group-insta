@@ -11,16 +11,16 @@ const BottomNav = (props) => {
     return (
         <nav className='bottomNav'>
             <a href="">
-                <object type="image/svg+xml" data={home} className="icon">Home</object>
+                <object type="image/svg+xml" data={home} className="icon" alt="home">Home</object>
             </a>
             <a href="">
-                <object type="image/svg+xml" data={search} className="icon">Search</object>
+                <object type="image/svg+xml" data={search} className="icon" alt="search">Search</object>
             </a>
             <a href="">
-                <object type="image/svg+xml" data={plus} className="icon">Add</object>
+                <object type="image/svg+xml" data={plus} className="icon" alt="plus">Add</object>
             </a>
             <a href="">
-                <object type="image/svg+xml" data={heart} className="icon">Heart</object>
+                <object type="image/svg+xml" data={heart} className="icon" alt="heart">Heart</object>
             </a>
             <a href="">
                 <div className='icon' id='imgDiv'><img className="avatarbNav" src={john} alt=""/></div>
