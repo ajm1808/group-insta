@@ -1,0 +1,29 @@
+.photoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.photoForm {
+    display: flex;
+    width:700px;
+    height:700px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 24px;
+
+}
+
+#captionBox {
+    width:300px;
+    height: 100px;
+    margin: 30px 0px;
+}

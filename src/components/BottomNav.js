@@ -16,9 +16,10 @@ const BottomNav = (props) => {
             <a href="">
                 <object type="image/svg+xml" data={search} className="icon" alt="search">Search</object>
             </a>
-            <a href="">
+            <a href="" >
                 <object type="image/svg+xml" data={plus} className="icon" alt="plus">Add</object>
             </a>
+            <button onClick={props.handleToggleAddPhoto}>Add</button>
             <a href="">
                 <object type="image/svg+xml" data={heart} className="icon" alt="heart">Heart</object>
             </a>
