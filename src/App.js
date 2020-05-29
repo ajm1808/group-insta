@@ -36,8 +36,14 @@ class App extends Component {
 
   addToLikes = (index) => {
     let currentLikes=this.state.posts
-    currentLikes[index].likes++
+    if(currentLikes[index].likes==0){
+    currentLikes[index].likes++;
     this.setState({posts: currentLikes})
+    }
+    else{
+      currentLikes[index].likes--;
+      this.setState({posts: currentLikes})
+    }
   }
 
   render(){
