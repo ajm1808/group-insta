@@ -35,3 +35,37 @@
     width: 25px;
     margin: 10px;
 }
+
+@media screen and (min-width:0px) and (max-width:700px){
+    .TopNav {
+        display: flex;
+        text-align: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    #navIcons{
+        float:right;
+    }
+    #topSearch{
+        display:none;
+    }
+    .topIcons{
+        display:none;
+    }
+    .paper{
+        display:block;
+        float: right;
+        margin-right: 0;
+    }
+    .avatarbNav{
+        display:none;
+    }
+    #instaLogo{
+        left:50;
+    }
+
+}
+
+@media screen and  (min-width:701px){
+    .bottomNav {display:none;}
+}
