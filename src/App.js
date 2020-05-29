@@ -13,7 +13,6 @@ import CharlieHome from './img/feedImg/home2.PNG';
 class App extends Component {
   state={
     posts:[
-      
         {
           id:0,
           profileImg:Cheryl,

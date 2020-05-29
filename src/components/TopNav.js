@@ -15,33 +15,21 @@ const TopNav =()=>{
             <img alt="Instagram" id="instaLogo" src={instalogo} />
             <input type="text" id="topSearch" placeholder="Search"></input>
             <div id="navIcons">
-                <a href="">
-                {/* <img src={home} /> */}
+                <a>
                     <object type="image/svg+xml" data={home} className='topIcons' alt="home"></object>
                 </a>
-                <a href="">
-                {/* <img src={paperplane} /> */}
+                <a>
                     <object type="image/svg+xml" data={paperplane} className='topIcons' alt="paperplane"></object>
                 </a>
-                <a href="">
-                {/* <img src={compass} /> */}
+                <a>
                     <object type="image/svg+xml" data={compass} className='topIcons' alt="compass"></object>
                 </a>
-                <a href="">
-                    {/* <img src={heart} /> */}
+                <a>
                     <object type="image/svg+xml" data={heart} className='topIcons' alt ="heart"></object>
                 </a>
-                <a href="">
-                    {/* <img src={heart} /> */}
+                <a>
                     <img className="avatarbNav" src={john} alt=""/>
                 </a>
-
-
-                
-                {/* <li id="messages">Messages</li>
-                <li id="discover">Discover</li>
-                <li id="activity">Activity</li>
-                <li id="yourProfile">Your profile</li> */}
             </div>
             
         </nav>
