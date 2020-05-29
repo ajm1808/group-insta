@@ -36,19 +36,23 @@ width:25%;
     align-items: center;
 }
 
-
 .btnIcons{
-
+    outline:none;
     padding:0;
     border:none;
     background:0;
     width:25%;
 }
 
-
-
 .svgIcon:hover {
     
     fill:black;
 }
 
+@media screen and (min-width:0px) and (max-width:700px){
+    .bottomNav {display:flex;}
+}
+
+@media screen and  (min-width:701px){
+    .bottomNav {display:none;}
+}

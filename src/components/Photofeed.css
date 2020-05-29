@@ -114,16 +114,22 @@
     padding:0;
     border:none;
     background:0;
+    outline:none;
 }
+
+/* button:
 
 button:focus{
     outline: none;
-}
+} */
+
 
 .buttonImg{
     width:24px;
     height:24px;
 }
+
+
 
 #likebar{
     margin-top:4px;
