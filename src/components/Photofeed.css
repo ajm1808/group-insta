@@ -109,12 +109,21 @@
 }
 
 .likeOthersBtn{
-    width: 24px;
-    height:24px;
-    padding:8px;
+    width: 40px;
+    height:40px;
+    padding:0;
+    border:none;
+    background:0;
 }
 
+button:focus{
+    outline: none;
+}
 
+.buttonImg{
+    width:24px;
+    height:24px;
+}
 
 .comments{
     width:24px;
