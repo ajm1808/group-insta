@@ -5,8 +5,6 @@ import  search from '../img/search.svg'
 import  plus from '../img/plus-square.svg'
 import  heart from '../img/heart.svg'
 import john from '../img/feedImg/john.PNG'
-
-
 const BottomNav = (props) => {
     return (
         <nav className='bottomNav'>
@@ -30,12 +28,10 @@ const BottomNav = (props) => {
             </svg>
             </button>
             <a href="">
-                <div className='icon' id='imgDiv'><img className="avatarbNav" src={john} alt=""/></div>
+                <div className='icon' id='imgDiv'><img className="avatarbNav1" src={john} alt=""/></div>
             </a>
             
-
         </nav>
     )
 }
-
 export default BottomNav;
