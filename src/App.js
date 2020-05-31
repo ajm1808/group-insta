@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import TopNav from './components/TopNav';
 import Photofeed from './components/Photofeed';
 import './App.css';
+import Stories from './components/Stories';
+import Suggestions from './components/Suggestions';
 import BottomNav from './components/BottomNav';
 import AddPhoto from './components/AddPhoto';
 import Cheryl from './img/feedImg/cheryl.PNG';
@@ -93,6 +95,8 @@ class App extends Component {
         <TopNav />
         {this.state.toggleAddPhoto && <AddPhoto addPost={this.addPost} />}
         {eachPost}
+        <Stories />
+        <Suggestions />
         <BottomNav handleToggleAddPhoto={this.handleToggleAddPhoto}/>
       </div>
     )
