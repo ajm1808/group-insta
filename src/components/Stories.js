@@ -1,6 +1,10 @@
 import React from 'react';
 import './Stories.css';
-import john from '../img/feedImg/john.PNG'
+import john from '../img/feedImg/john.PNG';
+import andyM from '../img/profileImg/andyM.jpg';
+import pikachu from '../img/profileImg/pikachu.jpg';
+import rebekah from '../img/profileImg/rebekah.jpg';
+import dean from '../img/profileImg/dean.jpg';
 
 const Stories = () => {
     return(
@@ -19,10 +23,10 @@ const Stories = () => {
                 </div>
                 <div id="storSections">
                     <div>
-                        <img src={john} alt="Story suggestion" className="storPics"/>
+                        <img src={andyM} alt="Story suggestion" className="storPics"/>
                     </div>
                     <div className="storSectMiddle">
-                        <div className="storUserNames">User name suggestion1 + 1</div>
+                        <div className="storUserNames">legoandym + 1</div>
                         <div className="underStorNames">9 MINUTES AGO</div>
                     </div>
                     <div>
@@ -31,10 +35,10 @@ const Stories = () => {
                 </div>
                 <div id="storSections">
                     <div>
-                        <img src={john} alt="Story suggestion" className="storPics"/>
+                        <img src={pikachu} alt="Story suggestion" className="storPics"/>
                     </div>
                     <div className="storSectMiddle">
-                        <div className="storUserNames">User name suggestion2 + 1</div>
+                        <div className="storUserNames">pikachuuuuu + 1</div>
                         <div className="underStorNames">53 MINTUES AGO</div>
                     </div>
                     <div>
@@ -43,10 +47,10 @@ const Stories = () => {
                 </div>
                 <div id="storSections">
                     <div>
-                        <img src={john} alt="Story suggestion" className="storPics"/>
+                        <img src={rebekah} alt="Story suggestion" className="storPics"/>
                     </div>
                     <div className="storSectMiddle">
-                        <div className="storUserNames">User name suggestion 3</div>
+                        <div className="storUserNames">rebekahkahkah</div>
                         <div className="underStorNames">4 HOURS AGO</div>
                     </div>
                     <div>
@@ -55,10 +59,10 @@ const Stories = () => {
                 </div>
                 <div id="storSections">
                     <div>
-                        <img src={john} alt="Story suggestion" className="storPics"/>
+                        <img src={dean} alt="Story suggestion" className="storPics"/>
                     </div>
                     <div className="storSectMiddle">
-                        <div className="storUserNames">User name suggestion 4</div>
+                        <div className="storUserNames">fightmedean</div>
                         <div className="underStorNames">17 HOURS AGO</div>
                     </div>
                     <div>
