@@ -3,7 +3,6 @@
     height: fit-content;
     background-color: white;
     position: relative;
-    
 }
 #profileNameBox {
     display: flex;
@@ -15,11 +14,13 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .profileName {
     font-size: 14px;
     margin-bottom: 0;
     font-weight: bold;
+    cursor: pointer;
 }
 .underProfName {
     font-size: 12px;
@@ -55,6 +56,7 @@
     margin-right: 15px;
     margin-top: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 #storSections {
     display: flex;
@@ -68,6 +70,7 @@
     padding: 2px;
     border: 1px solid purple;
     flex: 1;
+    cursor: pointer;
 }
 .storSectMiddle {
     flex: 4;
@@ -92,6 +95,12 @@
     margin: none;
     padding: none;
     text-align: center;
+    cursor: pointer;
+}
+.storLiveBtn:hover {
+    background-color: white;
+    color: red;
+    font-weight: bold;
 }
 .storBlankBtn {
     height: 20px;

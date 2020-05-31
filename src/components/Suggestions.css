@@ -27,6 +27,7 @@
     margin-right: 20px;
     margin-top: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 #sugSections {
     display: flex;
@@ -40,6 +41,7 @@
     padding: 2px;
     border: 1px solid purple;
     flex: 1;
+    cursor: pointer;
 }
 .sugSectMiddle {
     flex: 4;
@@ -63,4 +65,5 @@
     margin: none;
     padding: none;
     text-align: right;
+    cursor: pointer;
 }
