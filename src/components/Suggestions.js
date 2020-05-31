@@ -1,6 +1,8 @@
 import React from 'react';
 import './Suggestions.css';
-import john from '../img/feedImg/john.PNG';
+import bex from '../img/profileImg/bex.jpg';
+import charmander from '../img/profileImg/charmander.jpg';
+import richard from '../img/profileImg/richard.jpg';
 
 const Suggestions = () => {
     return (
@@ -11,10 +13,10 @@ const Suggestions = () => {
             </div>
             <div id="sugSections">
                 <div>
-                    <img src={john} alt="Suggestion" className="sugPics"/>
+                    <img src={bex} alt="Suggestion" className="sugPics"/>
                 </div>
                 <div className="sugSectMiddle">
-                    <div className="sugUserNames">User name suggestion 1</div>
+                    <div className="sugUserNames">bamboobex</div>
                     <div className="underSugNames">Popular</div>
                 </div>
                 <div>
@@ -23,10 +25,10 @@ const Suggestions = () => {
             </div>
             <div id="sugSections">
                 <div>
-                    <img src={john} alt="Suggestion" className="sugPics"/>
+                    <img src={charmander} alt="Suggestion" className="sugPics"/>
                 </div>
                 <div className="sugSectMiddle">
-                    <div className="sugUserNames">User name suggestion 2</div>
+                    <div className="sugUserNames">charcharfire</div>
                     <div className="underSugNames">Suggested for you</div>
                 </div>
                 <div>
@@ -35,10 +37,10 @@ const Suggestions = () => {
             </div>
             <div id="sugSections">
                 <div>
-                    <img src={john} alt="Suggestion" className="sugPics"/>
+                    <img src={richard} alt="Suggestion" className="sugPics"/>
                 </div>
                 <div className="sugSectMiddle">
-                    <div className="sugUserNames">User name suggestion 3</div>
+                    <div className="sugUserNames">trickydickie</div>
                     <div className="underSugNames">New to Instagram</div>
                 </div>
                 <div>
