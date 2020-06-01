@@ -10,7 +10,8 @@ import Cheryl from './img/feedImg/cheryl.PNG';
 import CherylHome from './img/feedImg/home1.PNG';
 import Charlie from './img/feedImg/charlie.PNG';
 import CharlieHome from './img/feedImg/home2.PNG';
-import John from './img/feedImg/john.PNG'
+import John from './img/feedImg/john.PNG';
+import Charlie1 from './img/feedImg/chap1.jpg';
 
 
 class App extends Component {
@@ -20,6 +21,14 @@ class App extends Component {
     posts: [
       {
         id: 0,
+        profileImg: Charlie,
+        profileName: "chazzachaplin",
+        photo: Charlie1,
+        description: "felt cute, might delete later...",
+        likes: 0,
+      },
+      {
+        id: 1,
         profileImg: Cheryl,
         profileName: "cheryltweedy",
         photo: CherylHome,
@@ -27,9 +36,9 @@ class App extends Component {
         likes: 0,
       },
       {
-        id: 1,
+        id: 2,
         profileImg: Charlie,
-        profileName: "charliechaplin",
+        profileName: "chazzachaplin",
         photo: CharlieHome,
         description: "ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         likes: 0,
@@ -43,7 +52,7 @@ class App extends Component {
 
   addPost = (caption) => {
     let newPost = {
-      id: 2,
+      id: 3,
       profileImg: John,
       profileName: "johnWayne",
       photo: 'https://i.guim.co.uk/img/media/9c32c02f6efb6c834e13340a34ee88f9f7352be0/0_27_1865_2352/master/1865.jpg?width=300&quality=85&auto=format&fit=max&s=f3ffe0ad7d22ad9f85ed0348907edd32',
