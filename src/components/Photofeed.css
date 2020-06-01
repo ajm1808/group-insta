@@ -133,9 +133,16 @@ button:focus{
     max-height: 30px;
 }
 
-.likePath:hover {
+.likePath {
+    fill:white;
+    stroke:black;
+    stroke-width: 10px;
+}
+
+.likePathRed {
     fill: red;
-    stroke: transparent;
+    stroke: red;
+    stroke-width: 10px;
 }
 
 
