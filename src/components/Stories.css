@@ -1,7 +1,6 @@
 #profStorBox {   
     width: 325px;
     height: fit-content;
-    background-color: white;
     position: relative;
 }
 #profileNameBox {
@@ -35,6 +34,7 @@
     flex-direction: column;
     border: 1px solid lightgrey;
     border-radius: 1%;
+    background-color: white;
 }
 #storTitleBox {
     width: 325px;
