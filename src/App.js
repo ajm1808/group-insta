@@ -15,6 +15,7 @@ import John from './img/feedImg/john.PNG'
 
 class App extends Component {
   state = {
+    toggleIsLiked: false,
     toggleAddPhoto: false,
     posts: [
       {
@@ -38,6 +39,8 @@ class App extends Component {
 
   }
 
+  
+
   addPost = (caption) => {
     let newPost = {
       id: 2,
@@ -55,16 +58,28 @@ class App extends Component {
     this.setState(prevState => ({ posts: [newPost,...prevState.posts], toggleAddPhoto: false }))
   }
 
+   changeFillLike = () => {
+    return (
+      <path className={this.state.toggleIsLiked ? 'likePathRed' : 'likePath'} fill='white' stroke='black' stroke-width='10px'  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+    )
+    }
+
+
 
   addToLikes = (index) => {
     let currentLikes = this.state.posts
+    let toggleIsLiked = this.state.toggleIsLiked
     if (currentLikes[index].likes == 0) {
       currentLikes[index].likes++;
-      this.setState({ posts: currentLikes })
+      toggleIsLiked = true;
+      this.setState({ posts: currentLikes,
+      toggleIsLiked: toggleIsLiked })
     }
     else {
       currentLikes[index].likes--;
-      this.setState({ posts: currentLikes })
+      toggleIsLiked = false;
+      this.setState({ posts: currentLikes,
+      toggleIsLiked: toggleIsLiked })
     }
   }
 
@@ -86,6 +101,7 @@ class App extends Component {
           addingLikes={this.addToLikes}
           likeCount={posts.likes}
           index={index}
+          changeFillLike={this.changeFillLike}
         />
       )
     })
