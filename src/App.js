@@ -54,7 +54,7 @@ class App extends Component {
     let newPost = {
       id: 3,
       profileImg: John,
-      profileName: "johnWayne",
+      profileName: "jwayneyboi",
       photo: 'https://i.guim.co.uk/img/media/9c32c02f6efb6c834e13340a34ee88f9f7352be0/0_27_1865_2352/master/1865.jpg?width=300&quality=85&auto=format&fit=max&s=f3ffe0ad7d22ad9f85ed0348907edd32',
       description: caption,
       likes: 0,
