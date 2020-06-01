@@ -129,6 +129,14 @@ button:focus{
     height:24px;
 }
 
+.likeBtn {
+    max-height: 30px;
+}
+
+.likePath:hover {
+    fill: red;
+    stroke: transparent;
+}
 
 
 #likebar{
