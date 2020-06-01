@@ -1,0 +1,13 @@
+#rightNav {
+    background-color: rgb(250, 250, 250);
+    top: 70px;
+    position: fixed;
+    right: 30px;
+}
+
+@media screen and (max-width:1000px) {
+    #rightNav {
+        display: none;
+    }
+
+}
